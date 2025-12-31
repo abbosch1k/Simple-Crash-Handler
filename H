@@ -1,0 +1,11 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    try {
+        throw runtime_error("Crash");
+    } catch (...) {
+        cout << "Crash handled\n";
+    }
+}
